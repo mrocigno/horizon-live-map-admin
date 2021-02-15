@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+@import "~bootstrap/scss/bootstrap";
+
+// $background: #190d00;
+
+// body {
+//     margin: 0;
+//     font-family: 'Lato', sans-serif;
+//     overflow: hidden;
+// }
+
+// .falling-star {
+//     position: absolute;
+//     transform: rotatez(-45deg);
+//     width: 5px;
+//     height: 0px;
+//     background: rgb(255,255,255);
+//     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+//     animation: teste 3s;
+//     animation-direction: normal;
+//     animation-iteration-count: infinite;
+// }
+
+// @keyframes teste {
+//     0% {
+//         height: 0px;
+//         top: 0px;
+//         left: 0px;
+//     }
+
+//     70% {
+//         top: 50vh;
+//         left: 50vh;
+//         height: 30vh;
+//         transform: translateX(15vh) rotateZ(-45deg);
+//     }
+
+//     100% {
+//         top: 50vh;
+//         left: 50vh;
+//     }
+// }
