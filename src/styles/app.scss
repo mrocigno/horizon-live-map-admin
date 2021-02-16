@@ -2,13 +2,21 @@
 @import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
 @import "~bootstrap/scss/bootstrap";
 
-// $background: #190d00;
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
 
-// body {
-//     margin: 0;
-//     font-family: 'Lato', sans-serif;
-//     overflow: hidden;
-// }
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+
+// $background: #190d00;
 
 // .falling-star {
 //     position: absolute;
