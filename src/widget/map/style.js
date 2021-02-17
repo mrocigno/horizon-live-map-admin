@@ -38,3 +38,51 @@ export const SearchField = styled.input`
     padding: 0px 30px 0px 10px;
     outline: none;
 `;
+
+
+// Form modal
+export const DropzoneContainer = styled.div`
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        pointer-events: none;
+        flex: 1;
+        object-fit: cover;
+    }
+`;
+
+export const DragActiveZone = styled.div`
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    pointer-events: none;
+    padding: 10px;
+
+    div {
+        flex: 1;
+        border: 4px dashed gray;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    p {
+        margin: 0;
+        color: black;
+        font-weight: bold;
+    }
+`;
