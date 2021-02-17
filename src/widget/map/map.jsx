@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import L from 'leaflet'
 import { Marker, TileLayer, useMapEvents } from 'react-leaflet';
 import { AddPopup, FormModal } from './popup'
 import { HorizonIcon } from './icon'
@@ -57,20 +58,19 @@ const Map = (props) => {
         });
         console.log(teste);
     }
-    
+
     return (
         <>
             <HorizonMapContainer
                 center={[.5, .5]} 
                 zoom={3}
+                crs={L.CRS.Simple}
                 maxBoundsViscosity={1.0}
                 maxBounds={[
-                    [85, -179],
-                    [-85, 179]
+                    [0, 0],
+                    [-255, 255]
                 ]}>
-                
                 <TileLayer
-                    noWrap={true}
                     maxZoom={3}
                     tileSize={256}
                     url="tiles/{z}/{y}/{x}.jpg"
