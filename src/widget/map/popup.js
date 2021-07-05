@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useDropzone } from 'react-dropzone'
 import ModalHeader from 'react-bootstrap/esm/ModalHeader';
 import { Button, Modal, ModalBody, ModalFooter, ModalTitle } from 'react-bootstrap';
+import { useEffect } from 'react';
 
 export const AddPopup = ({
     props,
@@ -60,7 +61,7 @@ export const AddPopup = ({
     );
 }
 
-export const FormModal = ({props, show, onHide, onSave, listItem =  {
+export const FormModal = ({props, show, onHide, onSave, data, listItem =  {
     image: String,
     title: String,
     position: [Number, Number]
@@ -69,6 +70,7 @@ export const FormModal = ({props, show, onHide, onSave, listItem =  {
     const [about, setAbout] = useState("");
     const [content, setContent] = useState("");
     const [images, setImages] = useState([]);
+    const [imagesUrl, setImagesUrl] = useState([]);
 
     function MyDropzone() {
         const onDrop = useCallback(files => {
@@ -82,6 +84,9 @@ export const FormModal = ({props, show, onHide, onSave, listItem =  {
                     {images.length? (
                         images.map((e) => <img src={URL.createObjectURL(e)}/>)
                     ) : null}
+                    {imagesUrl.length? (
+                        imagesUrl.map((e) => <img src={`places/${e}`}/>)
+                    ) : null}
                     {isDragActive? (
                         <DragActiveZone>
                             <div>
@@ -89,7 +94,7 @@ export const FormModal = ({props, show, onHide, onSave, listItem =  {
                             </div>
                         </DragActiveZone>
                     ) : (
-                        images.length? null : (
+                        (images.length || imagesUrl.length)? null : (
                             <div>
                                 <p>Drag 'n' drop some files here, or click to select files</p>
                             </div>
@@ -110,41 +115,68 @@ export const FormModal = ({props, show, onHide, onSave, listItem =  {
     function _onSave() {
         onHide();
         onSave?.call(null, {
+            ...data,
             title,
             about,
             content,
             images,
             marker: listItem
         })
-        setContent("");
-        setImages([]);
-        setTitle("");
-        setAbout("");
+        clearAll();
     }
 
+    function clearAll() {
+        setContent("");
+        setImages([]);
+        setImagesUrl([]);
+        setTitle("");
+        setAbout("");            
+    }
+
+    useEffect(() => {
+        console.log("model", data);
+        setAbout(data?.about);
+        setContent(data?.content);
+        setTitle(data?.title);
+        setImagesUrl(data?.images ?? []);
+    }, [data])
+    
     return (
         <Modal 
             show={show}
             onHide={onHide}>
             <ModalHeader>
-                <ModalTitle>Teste</ModalTitle>
+                <ModalTitle style={{
+                    width: "100%",
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'baseline',
+                    justifyContent: 'space-between'
+                }}>
+                    {listItem?.title ?? ""}
+                    <img
+                        src={listItem?.image ?? ""}
+                        width={30}
+                        height={30}
+                    />
+                </ModalTitle>
             </ModalHeader>
             <ModalBody>
                 <Container>
                     <Row>
                         <Col>
                             <label>Title</label>
-                            <input type="text" className="form-control" onChange={(e) => setTitle(e.target.value)}/>
+                            <input type="text" className="form-control" value={title} onChange={(e) => setTitle(e.target.value)}/>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <label>About</label>
-                            <textarea className="form-control" onChange={(e) => setAbout(e.target.value)}></textarea>
+                            <textarea className="form-control" value={about} onChange={(e) => setAbout(e.target.value)}></textarea>
                         </Col>
                         <Col>
                             <label>Content</label>
-                            <textarea className="form-control" onChange={(e) => setContent(e.target.value)}></textarea>
+                            <textarea className="form-control" value={content} onChange={(e) => setContent(e.target.value)}></textarea>
                         </Col>
                     </Row>
                     <Row>
@@ -156,10 +188,13 @@ export const FormModal = ({props, show, onHide, onSave, listItem =  {
                 </Container>
             </ModalBody>
             <ModalFooter>
-                <Button variant="secondary" onClick={onHide}>
+                <Button variant="secondary" onClick={() => {
+                    clearAll();
+                    onHide();
+                }}>
                     Cancel
                 </Button>
-                <Button variant="primary" onClick={_onSave}>
+                <Button disabled={data?.id} variant="primary" onClick={_onSave}>
                     Save
                 </Button>
             </ModalFooter>

@@ -5,12 +5,15 @@ import { Marker, TileLayer, useMapEvents } from 'react-leaflet';
 import { AddPopup, FormModal } from './popup'
 import { HorizonIcon } from './icon'
 import { HorizonMapContainer } from './style';
+import { useEffect } from 'react';
 
 
 const Map = (props) => {
     const [showModal, setShowModal] = useState(null);
+    const [showModalToEdit, setShowModalToEdit] = useState(null);
     const [markers, setMarkers] = useState([]);
     const [popup, setPopup] = useState(null);
+
     function EventsListener() {
         useMapEvents({
             click(e) {
@@ -20,6 +23,7 @@ const Map = (props) => {
                 });
             }
         })
+        
         return null;
     }
 
@@ -35,13 +39,19 @@ const Map = (props) => {
 
     function onSave(data) {
         console.log(data);
-        const newMarkers = [].concat(markers);
-        newMarkers.push({
-            position: data.marker.position,
-            item: data.marker
-        })
+        const newMarkers = [data].concat(markers);
         setMarkers(newMarkers);
+        console.log(markers);
         send(data);
+    }
+
+    async function loadMarkers() {
+        const data = await (await fetch('/api/data', {
+            method: "GET"
+        })).json()
+        console.log(data);
+        
+        setMarkers(data)
     }
 
     async function send(data) {
@@ -59,6 +69,11 @@ const Map = (props) => {
         console.log(teste);
     }
 
+    useEffect(async () => {
+        await loadMarkers();
+        console.log("effect");
+    }, []);
+
     return (
         <>
             <HorizonMapContainer
@@ -68,12 +83,12 @@ const Map = (props) => {
                 maxBoundsViscosity={1.0}
                 maxBounds={[
                     [0, 0],
-                    [-255, 255]
+                    [-500, 500]
                 ]}>
                 <TileLayer
-                    maxZoom={3}
-                    tileSize={256}
-                    url="tiles/{z}/{y}/{x}.jpg"
+                    maxZoom={4}
+                    tileSize={250}
+                    url="new_tiles/{z}/{y}/{x}.jpg"
                 />
 
                 <EventsListener/>
@@ -84,11 +99,19 @@ const Map = (props) => {
                         onClick={onSelectPopupItem}/>
                 ) : (null))}
 
-                {markers.map((e) => 
+                {markers.map((e, i) => 
                     <Marker
-                        position={e.position}
+                        eventHandlers={{
+                            click: (e) => {
+                                console.log(markers[i]);
+                                setPopup(null);
+                                setShowModalToEdit(markers[i]);
+                            }
+                        }}
+                        zIndexOffset={i}
+                        position={e.marker.position}
                         icon={HorizonIcon({
-                            image: e.item.image
+                            image: e.marker.image
                         })}
                     />
                 )}
@@ -96,10 +119,15 @@ const Map = (props) => {
             </HorizonMapContainer>
 
             <FormModal
-                show={showModal != null}
-                onHide={() => setShowModal(null)}
+                show={(showModal != null || showModalToEdit != null)}
+                onHide={() => {
+                    setPopup(null)
+                    setShowModal(null)
+                    setShowModalToEdit(null)
+                }}
                 onSave={onSave}
-                listItem={showModal}/>
+                data={showModalToEdit}
+                listItem={showModal ?? showModalToEdit?.marker}/>
         </>
     );
 }

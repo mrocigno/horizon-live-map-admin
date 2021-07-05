@@ -4,7 +4,7 @@ import { MapContainer } from 'react-leaflet'
 
 export const HorizonMapContainer = styled(MapContainer)`
     height: 100vh;
-    background-color: white;
+    background-color: black;
 `;
 
 export const PopupContainer = styled(Container)`
