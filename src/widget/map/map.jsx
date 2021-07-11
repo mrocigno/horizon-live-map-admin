@@ -88,7 +88,7 @@ const Map = (props) => {
                 <TileLayer
                     maxZoom={4}
                     tileSize={250}
-                    url="new_tiles/{z}/{y}/{x}.jpg"
+                    url="tiles/{z}/{y}/{x}.webp"
                 />
 
                 <EventsListener/>
