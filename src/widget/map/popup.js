@@ -47,6 +47,7 @@ export const AddPopup = ({
                             onClick={(event) => onclick(event, item)}>
                             <ImageCol>
                                 <Image
+                                    objectFit='contain'
                                     src={item.image}
                                     width={30}
                                     height={30}

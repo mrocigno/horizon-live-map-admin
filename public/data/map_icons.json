@@ -1,0 +1,186 @@
+[
+    {
+        "image": "/images/map_icons/ic_camp.webp",
+        "title": "Camp"
+    },
+    {
+        "image": "/images/map_icons/ic_archive.webp",
+        "title": "Archive"
+    },
+    {
+        "image": "/images/map_icons/ic_bandit_camp.webp",
+        "title": "Bandit camp"
+    },
+    {
+        "image": "/images/map_icons/ic_cauldron_banuk.webp",
+        "title": "Cauldron ?"
+    },
+    {
+        "image": "/images/map_icons/ic_cauldron_rho.webp",
+        "title": "Cauldron RHO"
+    },
+    {
+        "image": "/images/map_icons/ic_cauldron_sigma.webp",
+        "title": "Cauldron SIGMA"
+    },
+    {
+        "image": "/images/map_icons/ic_cauldron_xi.webp",
+        "title": "Cauldron XI"
+    },
+    {
+        "image": "/images/map_icons/ic_cauldron_zeta.webp",
+        "title": "Cauldron ZETA"
+    },
+    {
+        "image": "/images/map_icons/ic_city.webp",
+        "title": "City"
+    },
+    {
+        "image": "/images/map_icons/ic_dungeon.webp",
+        "title": "Dungeon"
+    },
+    {
+        "image": "/images/map_icons/ic_flag.webp",
+        "title": "Flag"
+    },
+    {
+        "image": "/images/map_icons/ic_hand.webp",
+        "title": "Hand"
+    },
+    {
+        "image": "/images/map_icons/ic_house.webp",
+        "title": "House"
+    },
+    {
+        "image": "/images/map_icons/ic_memory.webp",
+        "title": "Memory"
+    },
+    {
+        "image": "/images/map_icons/ic_rost.webp",
+        "title": "Rost"
+    },
+    {
+        "image": "/images/map_icons/ic_shop.webp",
+        "title": "Shop"
+    },
+    {
+        "image": "/images/map_icons/ic_sidequest.webp",
+        "title": "Sidequest"
+    },
+    {
+        "image": "/images/map_icons/ic_signal.webp",
+        "title": "Signal"
+    },
+    {
+        "image": "/images/map_icons/ic_special_shop.webp",
+        "title": "Special Shop"
+    },
+    {
+        "image": "/images/map_icons/ic_training_camp.webp",
+        "title": "Training camp"
+    },
+    {
+        "image": "/images/map_icons/ic_village.webp",
+        "title": "Village"
+    },
+    {
+        "image": "/images/map_icons/ic_strider.webp",
+        "title": "Strider"
+    },
+    {
+        "image": "/images/map_icons/ic_watcher.webp",
+        "title": "Watcher"
+    },
+    {
+        "image": "/images/map_icons/ic_grazer.webp",
+        "title": "Grazer"
+    },
+    {
+        "image": "/images/map_icons/ic_scrapper.webp",
+        "title": "Scrapper"
+    },
+    {
+        "image": "/images/map_icons/ic_broadhead.webp",
+        "title": "Broadhead"
+    },
+    {
+        "image": "/images/map_icons/ic_lancehorn.webp",
+        "title": "Lancehorn"
+    },
+    {
+        "image": "/images/map_icons/ic_charger.webp",
+        "title": "Charger"
+    },
+    {
+        "image": "/images/map_icons/ic_longleg.webp",
+        "title": "Longleg"
+    },
+    {
+        "image": "/images/map_icons/ic_deathbringer.webp",
+        "title": "Deathbringer"
+    },
+    {
+        "image": "/images/map_icons/ic_sawtooth.webp",
+        "title": "Sawtooth"
+    },
+    {
+        "image": "/images/map_icons/ic_trampler.webp",
+        "title": "Trampler"
+    },
+    {
+        "image": "/images/map_icons/ic_corruptor.webp",
+        "title": "Corruptor"
+    },
+    {
+        "image": "/images/map_icons/ic_glinthawk.webp",
+        "title": "Glinthawk"
+    },
+    {
+        "image": "/images/map_icons/ic_bellowback.webp",
+        "title": "Fire Bellowback"
+    },
+    {
+        "image": "/images/map_icons/ic_bellowback.webp",
+        "title": "Ice Bellowback"
+    },
+    {
+        "image": "/images/map_icons/ic_stalker.webp",
+        "title": "Stalker"
+    },
+    {
+        "image": "/images/map_icons/ic_shell_walker.webp",
+        "title": "Shell Walker"
+    },
+    {
+        "image": "/images/map_icons/ic_ravager.webp",
+        "title": "Ravager"
+    },
+    {
+        "image": "/images/map_icons/ic_snapmaw.webp",
+        "title": "Snapmaw"
+    },
+    {
+        "image": "/images/map_icons/ic_rockbreaker.webp",
+        "title": "Rockbreaker"
+    },
+    {
+        "image": "/images/map_icons/ic_behemoth.webp",
+        "title": "Behemoth"
+    },
+    {
+        "image": "/images/map_icons/ic_thunderjaw.webp",
+        "title": "Thunderjaw"
+    },
+    {
+        "image": "/images/map_icons/ic_stormbird.webp",
+        "title": "Stormbird"
+    },
+    {
+        "image": "/images/map_icons/ic_scorcher.webp",
+        "title": "Scorcher"
+    },
+    {
+        "image": "/images/map_icons/ic_tallneck.webp",
+        "title": "Tallneck"
+    }
+]

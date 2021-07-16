@@ -34,7 +34,7 @@ teste.post((req, res) => {
 
     console.log(req.body);
 
-    fs.readFile('./public/data.json', 'utf8', (err, data) => {
+    fs.readFile('./public/data/data.json', 'utf8', (err, data) => {
         const objData = JSON.parse(data);
         const reqData = {...req.body}
 
@@ -44,9 +44,9 @@ teste.post((req, res) => {
         reqData.images = [].concat(req.files.map((e) => (e.filename)));
         objData.push(reqData);
 
-        const logger = fs.createWriteStream('./public/data.json');
+        const logger = fs.createWriteStream('./public/data/data.json');
 
-        logger.write(JSON.stringify(objData))
+        logger.write(JSON.stringify(objData));
     });
 
     res.status(200).json({data: "yeah"});

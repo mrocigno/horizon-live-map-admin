@@ -11,7 +11,7 @@ const teste = connect({
 teste.get((req, res) => {
     const fs = require('fs');
 
-    fs.readFile('./public/data.json', 'utf8', (err, data) => {
+    fs.readFile('./public/data/data.json', 'utf8', (err, data) => {
         const objData = JSON.parse(data);
         res.status(200).json(objData); 
     });
