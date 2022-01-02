@@ -1,186 +1,232 @@
 [
     {
         "image": "/images/map_icons/ic_camp.webp",
-        "title": "Camp"
+        "title": "Camp",
+        "category": "CAMP"
     },
     {
         "image": "/images/map_icons/ic_archive.webp",
-        "title": "Archive"
+        "title": "Archive",
+        "category": "SECRET"
     },
     {
         "image": "/images/map_icons/ic_bandit_camp.webp",
-        "title": "Bandit camp"
+        "title": "Bandit camp",
+        "category": "CAMP"
     },
     {
         "image": "/images/map_icons/ic_cauldron_banuk.webp",
-        "title": "Cauldron ?"
+        "title": "Cauldron ?",
+        "category": "CAULDRON"
     },
     {
         "image": "/images/map_icons/ic_cauldron_rho.webp",
-        "title": "Cauldron RHO"
+        "title": "Cauldron RHO",
+        "category": "CAULDRON"
     },
     {
         "image": "/images/map_icons/ic_cauldron_sigma.webp",
-        "title": "Cauldron SIGMA"
+        "title": "Cauldron SIGMA",
+        "category": "CAULDRON"
     },
     {
         "image": "/images/map_icons/ic_cauldron_xi.webp",
-        "title": "Cauldron XI"
+        "title": "Cauldron XI",
+        "category": "CAULDRON"
     },
     {
         "image": "/images/map_icons/ic_cauldron_zeta.webp",
-        "title": "Cauldron ZETA"
+        "title": "Cauldron ZETA",
+        "category": "CAULDRON"
     },
     {
         "image": "/images/map_icons/ic_city.webp",
-        "title": "City"
+        "title": "City",
+        "category": "CITY"
     },
     {
         "image": "/images/map_icons/ic_dungeon.webp",
-        "title": "Dungeon"
+        "title": "Dungeon",
+        "category": "DUNGEON"
     },
     {
         "image": "/images/map_icons/ic_flag.webp",
-        "title": "Flag"
+        "title": "Flag",
+        "category": "CUSTOM"
     },
     {
         "image": "/images/map_icons/ic_hand.webp",
-        "title": "Hand"
+        "title": "Hand",
+        "category": "COLLECTIBLE"
     },
     {
         "image": "/images/map_icons/ic_house.webp",
-        "title": "House"
+        "title": "House",
+        "category": "CITY"
     },
     {
         "image": "/images/map_icons/ic_memory.webp",
-        "title": "Memory"
+        "title": "Memory",
+        "category": "COLLECTIBLE"
     },
     {
         "image": "/images/map_icons/ic_rost.webp",
-        "title": "Rost"
+        "title": "Rost",
+        "category": "ROST"
     },
     {
         "image": "/images/map_icons/ic_shop.webp",
-        "title": "Shop"
+        "title": "Shop",
+        "category": "SHOP"
     },
     {
         "image": "/images/map_icons/ic_sidequest.webp",
-        "title": "Sidequest"
+        "title": "Sidequest",
+        "category": "QUEST"
     },
     {
         "image": "/images/map_icons/ic_signal.webp",
-        "title": "Signal"
+        "title": "Signal",
+        "category": "SECRET"
     },
     {
         "image": "/images/map_icons/ic_special_shop.webp",
-        "title": "Special Shop"
+        "title": "Special Shop",
+        "category": "SHOP"
     },
     {
         "image": "/images/map_icons/ic_training_camp.webp",
-        "title": "Training camp"
+        "title": "Training camp",
+        "category": "CAMP"
     },
     {
         "image": "/images/map_icons/ic_village.webp",
-        "title": "Village"
+        "title": "Village",
+        "category": "CITY"
     },
     {
         "image": "/images/map_icons/ic_strider.webp",
-        "title": "Strider"
+        "title": "Strider",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_watcher.webp",
-        "title": "Watcher"
+        "title": "Watcher",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_grazer.webp",
-        "title": "Grazer"
+        "title": "Grazer",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_scrapper.webp",
-        "title": "Scrapper"
+        "title": "Scrapper",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_broadhead.webp",
-        "title": "Broadhead"
+        "title": "Broadhead",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_lancehorn.webp",
-        "title": "Lancehorn"
+        "title": "Lancehorn",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_charger.webp",
-        "title": "Charger"
+        "title": "Charger",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_longleg.webp",
-        "title": "Longleg"
+        "title": "Longleg",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_deathbringer.webp",
-        "title": "Deathbringer"
+        "title": "Deathbringer",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_sawtooth.webp",
-        "title": "Sawtooth"
+        "title": "Sawtooth",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_trampler.webp",
-        "title": "Trampler"
+        "title": "Trampler",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_corruptor.webp",
-        "title": "Corruptor"
+        "title": "Corruptor",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_glinthawk.webp",
-        "title": "Glinthawk"
+        "title": "Glinthawk",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_bellowback.webp",
-        "title": "Fire Bellowback"
+        "title": "Fire Bellowback",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_bellowback.webp",
-        "title": "Ice Bellowback"
+        "title": "Ice Bellowback",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_stalker.webp",
-        "title": "Stalker"
+        "title": "Stalker",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_shell_walker.webp",
-        "title": "Shell Walker"
+        "title": "Shell Walker",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_ravager.webp",
-        "title": "Ravager"
+        "title": "Ravager",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_snapmaw.webp",
-        "title": "Snapmaw"
+        "title": "Snapmaw",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_rockbreaker.webp",
-        "title": "Rockbreaker"
+        "title": "Rockbreaker",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_behemoth.webp",
-        "title": "Behemoth"
+        "title": "Behemoth",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_thunderjaw.webp",
-        "title": "Thunderjaw"
+        "title": "Thunderjaw",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_stormbird.webp",
-        "title": "Stormbird"
+        "title": "Stormbird",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_scorcher.webp",
-        "title": "Scorcher"
+        "title": "Scorcher",
+        "category": "MACHINE"
     },
     {
         "image": "/images/map_icons/ic_tallneck.webp",
-        "title": "Tallneck"
+        "title": "Tallneck",
+        "category": "MACHINE"
     }
 ]

@@ -33,6 +33,7 @@ const Map = (props) => {
             position,
             ...item
         }
+        console.log(item);
         setShowModal(data);
         setPopup(null);
     }

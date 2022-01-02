@@ -65,6 +65,7 @@ export const AddPopup = ({
 export const FormModal = ({props, show, onHide, onSave, data, listItem =  {
     image: String,
     title: String,
+    category: String,
     position: [Number, Number]
 }}) => {
     const [title, setTitle] = useState("");
@@ -155,11 +156,18 @@ export const FormModal = ({props, show, onHide, onSave, data, listItem =  {
                     justifyContent: 'space-between'
                 }}>
                     {listItem?.title ?? ""}
-                    <img
-                        src={listItem?.image ?? ""}
-                        width={30}
-                        height={30}
-                    />
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center'
+                    }}>
+                        <img
+                            src={listItem?.image ?? ""}
+                            width={30}
+                            height={30}
+                        />
+                        <label style={{fontSize: '10px'}}>{listItem?.category ?? ""}</label>
+                    </div>
                 </ModalTitle>
             </ModalHeader>
             <ModalBody>
