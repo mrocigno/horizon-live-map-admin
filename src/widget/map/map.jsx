@@ -17,6 +17,7 @@ const Map = (props) => {
     function EventsListener() {
         useMapEvents({
             click(e) {
+                console.log(e);
                 setPopup({
                     lat: e.latlng.lat,
                     lng: e.latlng.lng

@@ -1,1 +1,171 @@
-[{"about":"Here Rost rest in peace","content":"não sei o que colocar aqui, talvez um  texto sobre o personagem.","marker":{"position":[-387.024169921875,306.973388671875],"id":15,"image":"/images/map_icons/ic_rost.webp","title":"Rost","category":"ROST"},"title":"The Rost Grave","id":0,"images":["iwarf4.jpeg"]},{"about":"undefined","content":"undefined","marker":{"position":[-388.336669921875,305.285888671875],"id":1,"image":"/images/map_icons/ic_camp.webp","title":"Camp","category":"CAMP"},"title":"Camp near Rost grave","id":1,"images":[]},{"about":"Villagers toppers","content":"","marker":{"position":[-367.240966796875,331.624755859375],"id":21,"image":"/images/map_icons/ic_village.webp","title":"Village","category":"CITY"},"title":"Vilarejo top","id":2,"images":[]},{"about":"Scrapper","content":"","marker":{"position":[-403.281494140625,323.872802734375],"id":25,"image":"/images/map_icons/ic_scrapper.webp","title":"Scrapper","category":"MACHINE"},"title":"Scrapper area","id":3,"images":["vqkekv.jpeg","8w2sm9.png"]},{"about":"Scrapper","content":"undefined","marker":{"position":[-404.30419921875,276.2451171875],"id":25,"image":"/images/map_icons/ic_scrapper.webp","title":"Scrapper","category":"MACHINE"},"title":"Scrapper Area","id":4,"images":["m8c7n.jpeg","kd2m6m.png"]},{"about":"Camp top","content":"","marker":{"position":[-397.82373046875,287.3349609375],"id":1,"image":"/images/map_icons/ic_camp.webp","title":"Camp","category":"CAMP"},"title":"Camp","id":5,"images":[]},{"about":"Top","content":"","marker":{"position":[-413.35107421875,327.0966796875],"id":21,"image":"/images/map_icons/ic_village.webp","title":"Village","category":"CITY"},"title":"Mother's village","id":6,"images":["1gj62.png","qxdc1l.jpeg"]},{"about":"undefined","content":"undefined","marker":{"position":[-416.780029296875,327.130615234375],"id":16,"image":"/images/map_icons/ic_shop.webp","title":"Shop","category":"SHOP"},"title":"Shop","id":7,"images":[]}]
+[
+    {
+        "about": "Here Rost rest in peace",
+        "content": "não sei o que colocar aqui, talvez um  texto sobre o personagem.",
+        "marker": {
+            "position": [
+                -387.024169921875,
+                306.973388671875
+            ],
+            "id": 15,
+            "image": "/images/map_icons/ic_rost.webp",
+            "title": "Rost",
+            "category": "ROST"
+        },
+        "title": "The Rost Grave",
+        "id": 0,
+        "images": [
+            "iwarf4.jpeg"
+        ]
+    },
+    {
+        "about": "undefined",
+        "content": "undefined",
+        "marker": {
+            "position": [
+                -388.336669921875,
+                305.285888671875
+            ],
+            "id": 1,
+            "image": "/images/map_icons/ic_camp.webp",
+            "title": "Camp",
+            "category": "CAMP"
+        },
+        "title": "Camp near Rost grave",
+        "id": 1,
+        "images": []
+    },
+    {
+        "about": "Villagers toppers",
+        "content": "",
+        "marker": {
+            "position": [
+                -367.240966796875,
+                331.624755859375
+            ],
+            "id": 21,
+            "image": "/images/map_icons/ic_village.webp",
+            "title": "Village",
+            "category": "CITY"
+        },
+        "title": "Vilarejo top",
+        "id": 2,
+        "images": []
+    },
+    {
+        "about": "Scrapper",
+        "content": "",
+        "marker": {
+            "position": [
+                -403.281494140625,
+                323.872802734375
+            ],
+            "id": 25,
+            "image": "/images/map_icons/ic_scrapper.webp",
+            "title": "Scrapper",
+            "category": "MACHINE"
+        },
+        "title": "Scrapper area",
+        "id": 3,
+        "images": [
+            "vqkekv.jpeg",
+            "8w2sm9.png"
+        ]
+    },
+    {
+        "about": "Scrapper",
+        "content": "undefined",
+        "marker": {
+            "position": [
+                -404.30419921875,
+                276.2451171875
+            ],
+            "id": 25,
+            "image": "/images/map_icons/ic_scrapper.webp",
+            "title": "Scrapper",
+            "category": "MACHINE"
+        },
+        "title": "Scrapper Area",
+        "id": 4,
+        "images": [
+            "m8c7n.jpeg",
+            "kd2m6m.png"
+        ]
+    },
+    {
+        "about": "Camp top",
+        "content": "",
+        "marker": {
+            "position": [
+                -397.82373046875,
+                287.3349609375
+            ],
+            "id": 1,
+            "image": "/images/map_icons/ic_camp.webp",
+            "title": "Camp",
+            "category": "CAMP"
+        },
+        "title": "Camp",
+        "id": 5,
+        "images": []
+    },
+    {
+        "about": "Top",
+        "content": "",
+        "marker": {
+            "position": [
+                -413.35107421875,
+                327.0966796875
+            ],
+            "id": 21,
+            "image": "/images/map_icons/ic_village.webp",
+            "title": "Village",
+            "category": "CITY"
+        },
+        "title": "Mother's village",
+        "id": 6,
+        "images": [
+            "1gj62.png",
+            "qxdc1l.jpeg"
+        ]
+    },
+    {
+        "about": "undefined",
+        "content": "undefined",
+        "marker": {
+            "position": [
+                -416.780029296875,
+                327.130615234375
+            ],
+            "id": 16,
+            "image": "/images/map_icons/ic_shop.webp",
+            "title": "Shop",
+            "category": "SHOP"
+        },
+        "title": "Shop",
+        "id": 7,
+        "images": []
+    },
+    {
+        "about": "Top",
+        "content": "per",
+        "marker": {
+            "position": [
+                -234.33942707178323,
+                195.97489720253444
+            ],
+            "id": 1,
+            "image": "/images/map_icons/ic_camp.webp",
+            "title": "Camp",
+            "category": {
+                "id": 1,
+                "title": "Campfire",
+                "name": "CAMP",
+                "zoom_lvl": 5
+            }
+        },
+        "title": "Fogueira braba",
+        "id": 8,
+        "images": []
+    }
+]

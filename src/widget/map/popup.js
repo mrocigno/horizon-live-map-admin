@@ -1,6 +1,6 @@
 import { PopupContainer, PopupRow, ImageCol, TitleCol, SearchField, DropzoneContainer, DragActiveZone } from './style'
 import { Popup } from 'react-leaflet';
-import { icons } from '../../model/listIcons'
+import { getIconsWithCategory } from '../../model/listIcons'
 import Image from 'next/image';
 import { useRef, useState, useCallback } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -26,12 +26,12 @@ export const AddPopup = ({
 
     function getIcons() {
         if (filter !== "") {
-            return icons.filter((e) => {
+            return getIconsWithCategory().filter((e) => {
                 let i = e.title.toLowerCase().indexOf(filter.toLowerCase());
                 return i >= 0
             })
         } else {
-            return icons;
+            return getIconsWithCategory();
         }
     }
 
@@ -65,7 +65,7 @@ export const AddPopup = ({
 export const FormModal = ({props, show, onHide, onSave, data, listItem =  {
     image: String,
     title: String,
-    category: String,
+    category: Object,
     position: [Number, Number]
 }}) => {
     const [title, setTitle] = useState("");
@@ -166,7 +166,7 @@ export const FormModal = ({props, show, onHide, onSave, data, listItem =  {
                             width={30}
                             height={30}
                         />
-                        <label style={{fontSize: '10px'}}>{listItem?.category ?? ""}</label>
+                        <label style={{fontSize: '10px'}}>{listItem?.category?.name ?? ""}</label>
                     </div>
                 </ModalTitle>
             </ModalHeader>
