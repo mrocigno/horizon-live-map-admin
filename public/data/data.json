@@ -157,12 +157,7 @@
             "id": 1,
             "image": "/images/map_icons/ic_camp.webp",
             "title": "Camp",
-            "category": {
-                "id": 1,
-                "title": "Campfire",
-                "name": "CAMP",
-                "zoom_lvl": 5
-            }
+            "category": "CAMP"
         },
         "title": "Fogueira braba",
         "id": 8,
